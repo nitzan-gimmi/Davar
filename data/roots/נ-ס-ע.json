@@ -1,1 +1,67 @@
 
+```json
+{
+"root_family": {
+"root": "נ-ס-ע",
+"gimel_gitit": "פ\"נ",
+"root_meaning_en": "The core concept of traveling or journeying.",
+"root_meaning_he": "הרעיון המרכזי של נסיעה או תנועה ממקום למקום.",
+"verbs": [
+{
+"identity": {
+"lemma": "נָסַע",
+"binyan": "פָּעַל",
+"voice": "active",
+"english_translation": "to travel, to drive",
+"related_verbs": {}
+},
+"infinitive": {
+"with_niqqud": "לִנְסֹעַ",
+"without_niqqud": "לנסוע"
+},
+"tenses": {
+"past": { "singular": { "1c": "נָסַעְתִּי", "3m": "נָסַע" } },
+"present": { "singular": { "m": "נוֹסֵעַ", "f": "נוֹסַעַת" } },
+"future": { "singular": { "1c": "אֶסַּע", "2m": "תִּסַּע", "3m": "יִסַּע" } },
+"imperative": { "singular": { "2m": "סַע" } }
+}
+},
+{
+"identity": {
+"lemma": "הִסִּיעַ",
+"binyan": "הִפְעִיל",
+"voice": "active (causative)",
+"english_translation": "to give a ride, to transport",
+"related_verbs": { "passive_counterpart": "הֻסַּע" }
+},
+"infinitive": {
+"with_niqqud": "לְהַסִּיעַ",
+"without_niqqud": "להסיע"
+},
+"tenses": {
+"past": { "3m": "הִסִּיעַ" },
+"present": { "m": "מַסִּיעַ" },
+"future": { "3m": "יַסִּיעַ" },
+"imperative": { "2m": "הַסַּע" }
+}
+},
+{
+"identity": {
+"lemma": "הֻסַּע",
+"binyan": "הֻפְעַל",
+"voice": "passive",
+"english_translation": "to be transported",
+"related_verbs": { "active_counterpart": "הִסִּיעַ" }
+},
+"infinitive": null,
+"tenses": {
+"past": { "3m": "הֻסַּע" },
+"present": { "m": "מֻסָּע" },
+"future": { "3m": "יֻסַּע" },
+"imperative": null
+}
+}
+]
+}
+}
+```
