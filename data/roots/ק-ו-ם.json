@@ -1,0 +1,67 @@
+
+```json
+{
+"root_family": {
+"root": "ק-ו-ם",
+"gimel_gitit": "ע\"ו (חלולים)",
+"root_meaning_en": "The core concept of rising, getting up, or establishing.",
+"root_meaning_he": "הרעיון המרכזי של קימה, התרוממות או הקמה.",
+"verbs": [
+{
+"identity": {
+"lemma": "קָם",
+"binyan": "פָּעַל",
+"voice": "active",
+"english_translation": "to get up, to rise",
+"related_verbs": {}
+},
+"infinitive": {
+"with_niqqud": "לָקוּם",
+"without_niqqud": "לקום"
+},
+"tenses": {
+"past": { "singular": { "1c": "קַמְתִּי", "2m": "קַמְתָּ", "3m": "קָם" } },
+"present": { "singular": { "m": "קָם", "f": "קָמָה" } },
+"future": { "singular": { "1c": "אָקוּם", "2m": "תָּקוּם", "3m": "יָקוּם" } },
+"imperative": { "singular": { "2m": "קוּם" } }
+}
+},
+{
+"identity": {
+"lemma": "הֵקִים",
+"binyan": "הִפְעִיל",
+"voice": "active (causative)",
+"english_translation": "to establish, to set up",
+"related_verbs": { "passive_counterpart": "הוּקַם" }
+},
+"infinitive": {
+"with_niqqud": "לְהָקִים",
+"without_niqqud": "להקים"
+},
+"tenses": {
+"past": { "3m": "הֵקִים" },
+"present": { "m": "מֵקִים" },
+"future": { "3m": "יָקִים" },
+"imperative": { "2m": "הָקֵם" }
+}
+},
+{
+"identity": {
+"lemma": "הוּקַם",
+"binyan": "הֻפְעַל",
+"voice": "passive",
+"english_translation": "to be established",
+"related_verbs": { "active_counterpart": "הֵקִים" }
+},
+"infinitive": null,
+"tenses": {
+"past": { "3m": "הוּקַם" },
+"present": { "m": "מוּקָם" },
+"future": { "3m": "יוּקַם" },
+"imperative": null
+}
+}
+]
+}
+}
+```
