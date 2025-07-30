@@ -1,0 +1,71 @@
+
+```json
+{
+"root_family": {
+"root": "א-כ-ל",
+"gimel_gitit": "פ\"א (גרונית)",
+"root_meaning_en": "The core concept of eating or consuming.",
+"root_meaning_he": "הרעיון המרכזי של אכילה או צריכה.",
+"verbs": [
+{
+"identity": {
+"lemma": "אָכַל",
+"binyan": "פָּעַל",
+"voice": "active",
+"english_translation": "to eat",
+"related_verbs": {
+"passive_counterpart": "נֶאֱכַל"
+}
+},
+"phonetics": {
+"ipa_standard": "/ʔaˈχal/",
+"transcription_common": "akhal"
+},
+"infinitive": {
+"with_niqqud": "לֶאֱכֹל",
+"without_niqqud": "לאכול"
+},
+"tenses": {
+"past": {
+"singular": { "1c": "אָכַלְתִּי", "2m": "אָכַלְתָּ", "2f": "אָכַלְתְּ", "3m": "אָכַל", "3f": "אָכְלָה" },
+"plural": { "1c": "אָכַלְנוּ", "2m": "אֲכַלְתֶּם", "2f": "אֲכַלְתֶּן", "3c": "אָכְלוּ" }
+},
+"present": {
+"singular": { "m": "אוֹכֵל", "f": "אוֹכֶלֶת" },
+"plural": { "m": "אוֹכְלִים", "f": "אוֹכְלוֹת" }
+},
+"future": {
+"singular": { "1c": "אֹכַל", "2m": "תֹּאכַל", "2f": "תֹּאכְלִי", "3m": "יֹאכַל", "3f": "תֹּאכַל" },
+"plural": { "1c": "נֹאכַל", "2c": "תֹּאכְלוּ", "3c": "יֹאכְלוּ" }
+},
+"imperative": {
+"singular": { "2m": "אֱכֹל", "2f": "אִכְלִי" },
+"plural": { "2c": "אִכְלוּ" }
+}
+}
+},
+{
+"identity": {
+"lemma": "נֶאֱכַל",
+"binyan": "נִפְעַל",
+"voice": "passive",
+"english_translation": "to be eaten",
+"related_verbs": {
+"active_counterpart": "אָכַל"
+}
+},
+"infinitive": {
+"with_niqqud": "לְהֵאָכֵל",
+"without_niqqud": "להיאכל"
+},
+"tenses": {
+"past": { "3m": "נֶאֱכַל" },
+"present": { "m": "נֶאֱכָל" },
+"future": { "3m": "יֵאָכֵל" },
+"imperative": null
+}
+}
+]
+}
+}
+```
