@@ -1,0 +1,96 @@
+📄 RTL-Ready Cheat-Sheet
+
+One-page production guide for Hebrew interfaces
+
+Version: 1.3 | Date: 22 July 2025 | Maintainer: נִצן בְּנִין | License: MIT
+
+---
+
+🔹 1. Root Declaration (always first line)
+
+```html
+<!doctype html>
+<html dir="rtl" lang="he">
+```
+
+---
+
+🔹 2. Logical CSS Tokens
+
+Old (physical)	New (logical)	Design-token snippet	
+`margin-left`	`margin-inline-start`	`"start-16": { "value": "1rem", "property": "margin-inline-start" }`	
+`border-right`	`border-inline-end`	`"border-end-1": { "value": "1px solid", "property": "border-inline-end" }`	
+`left: 0`	`inset-inline-start: 0`	—	
+
+> Never use `row-reverse`; it breaks keyboard order and spacing tokens.
+
+---
+
+🔹 3. Direction-Aware Icons
+
+```css
+[dir="rtl"] .icon-arrow-right,
+[dir="rtl"] .btn-next::after {
+  transform: scaleX(-1);
+}
+```
+
+Design-system token:
+
+```json
+"icons": { "arrow-right": { "flipX": true } }
+```
+
+---
+
+🔹 4. Figma ➜ Storybook Flow
+1. Figma
+
+   • Add boolean prop `RTL` to arrow components → set “Flip X”.
+
+   • Use start/end spacing tokens.
+
+2. Storybook  
+   
+```js
+   const withDir = (Story, ctx) => (
+     <div dir={ctx.globals.locale === 'he' ? 'rtl' : 'ltr'}>
+       <Story />
+     </div>
+   );
+   export const decorators = [withDir];
+   ```
+
+---
+
+🔹 5. Edge-Case Reminders
+
+Case	Fix	
+Page title starts with Latin	`<title>&rlm;MyApp – חנות בעברית</title>`	
+Mixed-direction form field	`<input name="msg" dirname="msg.dir">`	
+Mobile apps	rely on OS RTL setting; no extra code.	
+
+---
+
+🔹 6. Continuous Integration Gate
+
+```bash
+LOCALE=he npm run test:visual   # Percy / Chromatic
+```
+
+Fail build on visual diff > 0.3 %.
+
+---
+
+🔹 7. One-Click Debug Bookmarklet
+Drag to bookmarks bar, then click on any page:
+
+```js
+javascript:(()=>{document.documentElement.dir='rtl';document.documentElement.lang='he';})();
+```
+
+---
+
+Ready for DesignOps & DevDocs – copy into Confluence, Notion, or GitHub README.
+
+אולי בצורה הזאת אתה תבין יותר
