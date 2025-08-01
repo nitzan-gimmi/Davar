@@ -38,8 +38,6 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           comment: |
-            ✅ Root **${{ github.event.issue.title }}** has been successfully added to the Davar project!
-
-            You can view the new file here: `data/roots/${{ github.event.issue.title }}.json`
+            ✅ The root has been successfully added to the Davar project by the automated workflow!
 
             Commit details: ${{ steps.generate_commit.outputs.commit_url }}
