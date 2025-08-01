@@ -1,0 +1,40 @@
+{
+  "root_family": {
+    "root": "ה-ל-ך",
+    "gimel_gitit": "פ\"ה (גרונית)",
+    "root_meaning_en": "The core concept of walking or going.",
+    "root_meaning_he": "הרעיון המרכזי של הליכה או תנועה.",
+    "verbs": [
+      {
+        "identity": {
+          "lemma": "הָלַךְ",
+          "binyan": "פָּעַל",
+          "voice": "active",
+          "english_translation": "to walk, to go"
+        },
+        "infinitive": {
+          "with_niqqud": "לָלֶכֶת",
+          "without_niqqud": "ללכת"
+        },
+        "tenses": {
+          "past": {
+            "singular": { "1c": "הָלַכְתִּי", "2m": "הָלַכְתָּ", "2f": "הָלַכְתְּ", "3m": "הָלַךְ", "3f": "הָלְכָה" },
+            "plural": { "1c": "הָלַכְנוּ", "2m": "הֲלַכְתֶּם", "2f": "הֲלַכְתֶּן", "3c": "הָלְכוּ" }
+          },
+          "present": {
+            "singular": { "m": "הוֹלֵךְ", "f": "הוֹלֶכֶת" },
+            "plural": { "m": "הוֹלְכִים", "f": "הוֹלְכוֹת" }
+          },
+          "future": {
+            "singular": { "1c": "אֵלֵךְ", "2m": "תֵּלֵךְ", "2f": "תֵּלְכִי", "3m": "יֵלֵךְ", "3f": "תֵּלֵךְ" },
+            "plural": { "1c": "נֵלֵךְ", "2c": "תֵּלְכוּ", "3c": "יֵלְכוּ" }
+          },
+          "imperative": {
+            "singular": { "2m": "לֵךְ", "2f": "לְכִי" },
+            "plural": { "2c": "לְכוּ" }
+          }
+        }
+      }
+    ]
+  }
+}
