@@ -31,11 +31,13 @@ def main():
     genai.configure(api_key=GEMINI_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
+    # This is the improved prompt with a strict validation instruction
     prompt = f"""
-    אתה המומחה הראשי של פרויקט 'דָּבָר'.
-    משימתך היא לייצר את קובץ ה-JSON המלא עבור 'משפחת השורש' הבאה: **{root_name}**.
-    ודא שהקובץ כולל את כל הבניינים הרלוונטיים, עם כל ההטיות, הניקוד, והיחסים ביניהם, בהתאם לארכיטקטורה המדויקת של הפרויקט.
-    השב עם תוכן ה-JSON בלבד, בתוך בלוק קוד של json, ללא טקסט נוסף.
+    You are the primary expert for the "Davar" project.
+    Your task is to generate the complete JSON file for the following root family: **{root_name}**.
+    Ensure the file includes all relevant binyanim, with all inflections, niqqud, and relationships, according to the project's precise architecture.
+    **CRITICAL: Before outputting, you must validate the entire JSON content to ensure it is perfectly valid and free of syntax errors (like missing commas or brackets).**
+    Respond with ONLY the raw JSON content inside a single json code block. Do not include any other text.
     """
     try:
         response = model.generate_content(prompt)
@@ -45,11 +47,16 @@ def main():
         if json_content_raw.endswith('```'):
             json_content_raw = json_content_raw[:-3]
         
+        # Validate that the content is valid JSON
         json.loads(json_content_raw)
         print("Successfully generated and validated JSON content.")
 
     except Exception as e:
-        print(f"Error generating content from Gemini: {e}")
+        print(f"Error processing content from Gemini: {e}")
+        # Add the raw response to the output for better debugging
+        print("--- Raw Gemini Response ---")
+        print(response.text)
+        print("---------------------------")
         sys.exit(1)
 
     # --- 2. Commit the new file to GitHub ---
