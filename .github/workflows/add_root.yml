@@ -1,0 +1,45 @@
+name: Davar Content Contributor
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-new-root:
+    if: startsWith(github.event.issue.title, 'הוסף שורש:')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: 1. Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 2. Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: 3. Install dependencies
+        run: pip install requests google-generativeai
+
+      - name: 4. Run Generation and Commit Script
+        id: generate_commit
+        run: python .github/scripts/generate_and_commit.py
+        env:
+          GEMINI_API_KEY_SECRET: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN_SECRET: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          REPO_FULL_NAME: ${{ github.repository }}
+
+      - name: 5. Close Issue with a success comment
+        uses: actions/close-issue@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          comment: |
+            ✅ Root **${{ github.event.issue.title#*: }}** has been successfully added to the Davar project!
+
+            You can view the new file here: `data/roots/${{ github.event.issue.title#*: }}.json`
+
+            Commit details: ${{ steps.generate_commit.outputs.commit_url }}
