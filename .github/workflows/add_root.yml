@@ -47,7 +47,8 @@ if not all([GEMINI_API_KEY, GITHUB_TOKEN, ISSUE_TITLE, REPO_FULL_NAME]):
 
 # --- Extract root name from issue title ---
 try:
-    root_name = ISSUE_TITLE.split(':', 1).strip()
+    # Split the title by ':' and take the second part, then strip whitespace
+    root_name = ISSUE_TITLE.split(':', 1)[1].strip()
     if not root_name:
         raise IndexError
 except IndexError:
@@ -59,12 +60,14 @@ print(f"Generating JSON for root: {root_name}...")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
-prompt = f\"\"\"
+# This is the corrected line: Using single quotes for the outer f-string
+# allows using double quotes inside without complex escaping.
+prompt = f'''
 אתה המומחה הראשי של פרויקט 'דָּבָר'.
 משימתך היא לייצר את קובץ ה-JSON המלא עבור 'משפחת השורש' הבאה: **{root_name}**.
 ודא שהקובץ כולל את כל הבניינים הרלוונטיים, עם כל ההטיות, הניקוד, והיחסים ביניהם, בהתאם לארכיטקטורה המדויקת של הפרויקט.
 השב עם תוכן ה-JSON בלבד, בתוך בלוק קוד של json, ללא טקסט נוסף.
-\"\"\"
+'''
 try:
     response = model.generate_content(prompt)
     json_content_raw = response.text.strip()
@@ -73,6 +76,7 @@ try:
     if json_content_raw.endswith('```'):
         json_content_raw = json_content_raw[:-3]
     
+    # Validate that the content is valid JSON
     json.loads(json_content_raw)
     print("Successfully generated and validated JSON content.")
 
@@ -101,9 +105,10 @@ data = {
 print(f"Committing file '{filepath_in_repo}' to repository...")
 res = requests.put(api_url, headers=headers, data=json.dumps(data))
 
-if res.status_code in:
+if res.status_code in [200, 201]:
     print("✅ Successfully committed to GitHub.")
     commit_url = res.json().get('commit', {}).get('html_url', 'N/A')
+    # Use outputs to pass data to the next step
     with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
       f.write(f"commit_url={commit_url}")
 else:
@@ -122,8 +127,8 @@ else:
         with:
           issue-number: ${{ github.event.issue.number }}
           comment: |
-            ✅ Root **${{ fromJSON('["הוסף שורש:"]') }} ${{ github.event.issue.title }}** has been successfully added to the Davar project!
+            ✅ Root **${{ github.event.issue.title }}** has been successfully added to the Davar project!
 
-            You can view the new file here: `data/roots/${{ fromJSON('["הוסף שורש:"]')[0] }} ${{ github.event.issue.title }}.json`
+            You can view the new file here: `data/roots/${{ github.event.issue.title }} .json`
 
             Commit details: ${{ steps.generate_commit.outputs.commit_url }}
