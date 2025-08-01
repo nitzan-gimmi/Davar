@@ -1,0 +1,74 @@
+
+{
+  "root": "עשה",
+  "derivations": [
+    {
+      "binyan": "קל",
+      "tense": "עבר",
+      "inflections": [
+        {"person": "אני", "gender": null, "number": "יחיד", "form": "עשיתי"},
+        {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "עשית"},
+        {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "עשית"},
+        {"person": "היא", "gender": "נקבה", "number": "יחיד", "form": "עשתה"},
+        {"person": "הוא", "gender": "זכר", "number": "יחיד", "form": "עשה"},
+        {"person": "אנחנו", "gender": null, "number": "רבים", "form": "עשינו"},
+        {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "עשיתן"},
+        {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "עשיתם"},
+        {"person": "הן", "gender": "נקבה", "number": "רבים", "form": "עשו"},
+        {"person": "הם", "gender": "זכר", "number": "רבים", "form": "עשו"}
+      ]
+    },
+    {
+      "binyan": "קל",
+      "tense": "עתיד",
+      "inflections": [
+        {"person": "אני", "gender": null, "number": "יחיד", "form": "אעשה"},
+        {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "תעשי"},
+        {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "תעשה"},
+        {"person": "היא", "gender": "נקבה", "number": "יחיד", "form": "תעשה"},
+        {"person": "הוא", "gender": "זכר", "number": "יחיד", "form": "יעשה"},
+        {"person": "אנחנו", "gender": null, "number": "רבים", "form": "נעשה"},
+        {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "תעשינה"},
+        {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "תעשו"},
+        {"person": "הן", "gender": "נקבה", "number": "רבים", "form": "תעשינה"},
+        {"person": "הם", "gender": "זכר", "number": "רבים", "form": "יעשו"}
+      ]
+    },
+    {
+      "binyan": "קל",
+      "tense": "ציווי",
+      "inflections": [
+        {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "עשי"},
+        {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "עשה"},
+        {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "עשו"},
+        {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "עשו"}
+      ]
+    },
+    {
+      "binyan": "קל",
+      "tense": "הווה",
+      "inflections": [
+        {"form": "עושה", "aspect": "participial", "gender": "זכר", "number": "יחיד"},
+        {"form": "עושה", "aspect": "participial", "gender": "נקבה", "number": "יחיד"},
+        {"form": "עושים", "aspect": "participial", "gender": "זכר", "number": "רבים"},
+        {"form": "עושות", "aspect": "participial", "gender": "נקבה", "number": "רבים"}
+      ]
+    },
+        {
+          "binyan": "נפעל",
+          "tense": "עבר",
+          "inflections": [
+              {"person": "אני", "gender": null, "number": "יחיד", "form": "נעשיתי"},
+              {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "נעשית"},
+              {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "נעשית"},
+            {"person": "היא", "gender": "נקבה", "number": "יחיד", "form": "נעשתה"},
+            {"person": "הוא", "gender": "זכר", "number": "יחיד", "form": "נעשה"},
+             {"person": "אנחנו", "gender": null, "number": "רבים", "form": "נעשינו"},
+            {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "נעשיתן"},
+             {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "נעשיתם"},
+             {"person": "הן", "gender": "נקבה", "number": "רבים", "form": "נעשו"},
+             {"person": "הם", "gender": "זכר", "number": "רבים", "form": "נעשו"}
+        ]
+    }
+  ]
+}
