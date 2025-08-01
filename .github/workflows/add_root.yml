@@ -24,7 +24,7 @@ jobs:
       - name: 3. Install dependencies
         run: pip install requests google-generativeai
 
-      - name: 4. Run the Python Script
+      - name: 4. Run the Python Script to Generate and Commit
         id: generate_commit
         run: python .github/scripts/add_root_script.py
         env:
