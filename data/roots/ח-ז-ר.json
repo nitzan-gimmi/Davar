@@ -1,0 +1,118 @@
+{
+  "root_family": {
+    "root": "ח-ז-ר",
+    "gimel_gitit": "גרונית (ח')",
+    "root_meaning_en": "The core concept of returning, repeating, or going back.",
+    "root_meaning_he": "הרעיון המרכזי של חזרה, הישנות או תנועה לאחור.",
+    "verbs": [
+      {
+        "identity": {
+          "lemma": "חָזַר",
+          "binyan": "פָּעַל",
+          "voice": "active",
+          "english_translation": "to return, to go back",
+          "related_verbs": {
+            "causative_counterpart": "הֶחְזִיר"
+          }
+        },
+        "infinitive": {
+          "with_niqqud": "לַחֲזֹר",
+          "without_niqqud": "לחזור"
+        },
+        "tenses": {
+          "past": {
+            "singular": { "1c": "חָזַרְתִּי", "2m": "חָזַרְתָּ", "2f": "חָזַרְתְּ", "3m": "חָזַר", "3f": "חָזְרָה" },
+            "plural": { "1c": "חָזַרְנוּ", "2m": "חֲזַרְתֶּם", "2f": "חֲזַרְתֶּן", "3c": "חָזְרוּ" }
+          },
+          "present": {
+            "singular": { "m": "חוֹזֵר", "f": "חוֹזֶרֶת" },
+            "plural": { "m": "חוֹזְרִים", "f": "חוֹזְרוֹת" }
+          },
+          "future": {
+            "singular": { "1c": "אֶחְזֹר", "2m": "תַּחְזֹר", "2f": "תַּחְזְרִי", "3m": "יַחְזֹר", "3f": "תַּחְזֹר" },
+            "plural": { "1c": "נַחְזֹר", "2c": "תַּחְזְרוּ", "3c": "יַחְזְרוּ" }
+          },
+          "imperative": {
+            "singular": { "2m": "חֲזֹר", "2f": "חִזְרִי" },
+            "plural": { "2c": "חִזְרוּ" }
+          }
+        }
+      },
+      {
+        "identity": {
+          "lemma": "הֶחְזִיר",
+          "binyan": "הִפְעִיל",
+          "voice": "active",
+          "english_translation": "to return (something), to give back",
+          "related_verbs": {
+            "passive_counterpart": "הֻחְזַר"
+          }
+        },
+        "infinitive": {
+          "with_niqqud": "לְהַחֲזִיר",
+          "without_niqqud": "להחזיר"
+        },
+        "tenses": {
+          "past": {
+            "singular": { "3m": "הֶחְזִיר", "3f": "הֶחְזִירָה" }
+          },
+          "present": {
+            "singular": { "m": "מַחֲזִיר", "f": "מַחֲזִירָה" }
+          },
+          "future": {
+            "singular": { "3m": "יַחֲזִיר", "3f": "תַּחֲזִיר" }
+          }
+        }
+      },
+      {
+        "identity": {
+          "lemma": "הֻחְזַר",
+          "binyan": "הֻפְעַל",
+          "voice": "passive",
+          "english_translation": "to be returned",
+          "related_verbs": {
+            "active_counterpart": "הֶחְזִיר"
+          }
+        },
+        "infinitive": {
+          "with_niqqud": "לְהֻחְזַר",
+          "without_niqqud": "להוחזר"
+        },
+        "tenses": {
+          "past": {
+            "singular": { "3m": "הֻחְזַר", "3f": "הֻחְזְרָה" }
+          },
+          "present": {
+            "singular": { "m": "מֻחְזָר", "f": "מֻחְזֶרֶת" }
+          }
+        }
+      }
+    ],
+    "nouns_and_adjectives": [
+      {
+        "identity": {
+          "lemma": "חֲזָרָה",
+          "category": "noun",
+          "gender": "feminine",
+          "english_translation": "return, rehearsal"
+        },
+        "forms": {
+          "sg": { "absolute": "חֲזָרָה", "construct": "חֲזָרַת" },
+          "pl": { "absolute": "חֲזָרוֹת", "construct": "חַזְרוֹת" }
+        }
+      },
+      {
+        "identity": {
+          "lemma": "חוֹזֵר",
+          "category": "adjective",
+          "gender": "masculine",
+          "english_translation": "returning"
+        },
+        "forms": {
+          "sg": { "absolute": "חוֹזֵר" },
+          "pl": { "absolute": "חוֹזְרִים" }
+        }
+      }
+    ]
+  }
+}
