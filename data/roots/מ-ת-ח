@@ -1,67 +1,104 @@
 {
   "root_family": {
-    "root": "מ-ת-ח",
-    "gimel_gitit": "פ\"ת (שפתיים)",
-    "root_meaning_en": "The core concept of stretching or extending.",
-    "root_meaning_he": "הרעיון המרכזי של מתיחה או הארכה.",
+    "root": "כ-ת-ב",
+    "gzera": "שלמים",
+    "root_meaning": {
+      "he": "כתיבה, רישום, תיעוד",
+      "en": "writing, inscription, documentation"
+    },
     "verbs": [
       {
-        "identity": {
-          "lemma": "מָתַח",
-          "binyan": "פָּעַל",
-          "voice": "active",
-          "english_translation": "to stretch",
-          "related_verbs": {
-            "passive_counterpart": "נִמְתַּח"
-          }
+        "binyan": "פָּעַל",
+        "lemma": "כָּתַב",
+        "voice": "active",
+        "meaning": {
+          "he": "לכתוב",
+          "en": "to write"
         },
-        "phonetics": {
-          "ipa_standard": "/maˈtaχ/",
-          "transcription_common": "matach"
+        "relations": { "passive": "נִכְתַּב" },
+        "infinitive": { "niqqud": "לִכְתֹּב", "plain": "לכתוב" },
+        "conjugation": {
+          "past": { "1s": "כָּתַבְתִּי", "2ms": "כָּתַבְתָּ", "2fs": "כָּתַבְתְּ", "3ms": "כָּתַב", "3fs": "כָּתְבָה", "1p": "כָּתַבְנוּ", "2mp": "כְּתַבְתֶּם", "2fp": "כְּתַבְתֶּן", "3p": "כָּתְבוּ" },
+          "present": { "ms": "כּוֹתֵב", "fs": "כּוֹתֶבֶת", "mp": "כּוֹתְבִים", "fp": "כּוֹתְבוֹת" },
+          "future": { "1s": "אֶכְתֹּב", "2ms": "תִּכְתֹּב", "2fs": "תִּכְתְּבִי", "3ms": "יִכְתֹּב", "3fs": "תִּכְתֹּב", "1p": "נִכְתֹּב", "2p": "תִּכְתְּבוּ", "3p": "יִכְתְּבוּ" },
+          "imperative": { "2ms": "כְּתֹב", "2fs": "כִּתְבִי", "2p": "כִּתְבוּ" }
         },
-        "infinitive": {
-          "with_niqqud": "לִמְתֹחַ",
-          "without_niqqud": "למתוח"
-        },
-        "tenses": {
-          "past": {
-            "singular": { "1c": "מָתַחְתִּי", "2m": "מָתַחְתָּ", "2f": "מָתַחְתְּ", "3m": "מָתַח", "3f": "מָתְחָה" },
-            "plural": { "1c": "מָתַחְנוּ", "2m": "מְתַחְתֶּם", "2f": "מְתַחְתֶּן", "3c": "מָתְחוּ" }
-          },
-          "present": {
-            "singular": { "m": "מוֹתֵחַ", "f": "מוֹתֶחֶת" },
-            "plural": { "m": "מוֹתְחִים", "f": "מוֹתְחוֹת" }
-          },
-          "future": {
-            "singular": { "1c": "אֶמְתֹּחַ", "2m": "תִּמְתֹּחַ", "2f": "תִּמְתְחִי", "3m": "יִמְתֹּחַ", "3f": "תִּמְתֹּחַ" },
-            "plural": { "1c": "נִמְתֹּחַ", "2c": "תִּמְתְחוּ", "3c": "יִמְתְחוּ" }
-          },
-          "imperative": {
-            "singular": { "2m": "מְתֹחַ", "2f": "מְתְחִי" },
-            "plural": { "2c": "מְתְחוּ" }
-          }
-        }
+        "examples": [
+          { "he": "אני כותב מכתב לחבר שלי.", "en": "I am writing a letter to my friend." },
+          { "he": "הוא כתב ספר חשוב.", "en": "He wrote an important book." }
+        ]
       },
       {
-        "identity": {
-          "lemma": "נִמְתַּח",
-          "binyan": "נִפְעַל",
-          "voice": "passive",
-          "english_translation": "to be stretched",
-          "related_verbs": {
-            "active_counterpart": "מָתַח"
-          }
-        },
-        "infinitive": {
-          "with_niqqud": "לְהִמָּתֵחַ",
-          "without_niqqud": "להימתח"
-        },
-        "tenses": {
-          "past": { "3m": "נִמְתַּח" },
-          "present": { "m": "נִמְתָּח" },
-          "future": { "3m": "יִמָּתֵחַ" },
-          "imperative": null
-        }
+        "binyan": "נִפְעַל",
+        "lemma": "נִכְתַּב",
+        "voice": "passive",
+        "meaning": { "he": "נכתב", "en": "to be written" },
+        "relations": { "active": "כָּתַב" },
+        "infinitive": { "niqqud": "לְהִכָּתֵב", "plain": "להיכתב" },
+        "conjugation": { ... },
+        "examples": [
+          { "he": "המכתב נכתב אתמול.", "en": "The letter was written yesterday." }
+        ]
+      },
+      {
+        "binyan": "פִּעֵל",
+        "lemma": "כִּתֵּב",
+        "voice": "active-intensive",
+        "meaning": { "he": "לכתוב בהדגשה / לכתוב למישהו", "en": "to inscribe, to caption, to write intensively" },
+        "relations": { "passive": "כֻּתַּב" },
+        "infinitive": { "niqqud": "לְכַתֵּב", "plain": "לכתב" },
+        "conjugation": { ... },
+        "examples": [
+          { "he": "הוא כִּתֵּב את הילדים במחנה קיץ.", "en": "He registered the children at summer camp." }
+        ]
+      },
+      {
+        "binyan": "פֻּעַל",
+        "lemma": "כֻּתַּב",
+        "voice": "passive",
+        "meaning": { "he": "נכתב בצורה מודגשת", "en": "to be inscribed" },
+        "relations": { "active": "כִּתֵּב" },
+        "infinitive": null,
+        "conjugation": { ... },
+        "examples": [
+          { "he": "השם כֻּתַּב על המצבה.", "en": "The name was inscribed on the gravestone." }
+        ]
+      },
+      {
+        "binyan": "הִפְעִיל",
+        "lemma": "הִכְתִּיב",
+        "voice": "active-causative",
+        "meaning": { "he": "להכתיב", "en": "to dictate" },
+        "relations": { "passive": "הֻכְתַּב" },
+        "infinitive": { "niqqud": "לְהַכְתִּיב", "plain": "להכתיב" },
+        "conjugation": { ... },
+        "examples": [
+          { "he": "המורה הִכְתִּיב לתלמידים משפטים.", "en": "The teacher dictated sentences to the students." }
+        ]
+      },
+      {
+        "binyan": "הֻפְעַל",
+        "lemma": "הֻכְתַּב",
+        "voice": "passive",
+        "meaning": { "he": "נכתב בהכתבה", "en": "to be dictated" },
+        "relations": { "active": "הִכְתִּיב" },
+        "infinitive": null,
+        "conjugation": { ... },
+        "examples": [
+          { "he": "המשפט הֻכְתַּב לתלמיד.", "en": "The sentence was dictated to the student." }
+        ]
+      },
+      {
+        "binyan": "הִתְפַּעֵל",
+        "lemma": "הִתְכַּתֵּב",
+        "voice": "reciprocal",
+        "meaning": { "he": "להתכתב (חלופת מכתבים)", "en": "to correspond" },
+        "relations": {},
+        "infinitive": { "niqqud": "לְהִתְכַּתֵּב", "plain": "להתכתב" },
+        "conjugation": { ... },
+        "examples": [
+          { "he": "אנחנו מתכתבים באימייל.", "en": "We correspond by email." }
+        ]
       }
     ]
   }
