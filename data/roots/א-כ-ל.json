@@ -1,71 +1,162 @@
-
-```json
 {
-"root_family": {
-"root": "א-כ-ל",
-"gimel_gitit": "פ\"א (גרונית)",
-"root_meaning_en": "The core concept of eating or consuming.",
-"root_meaning_he": "הרעיון המרכזי של אכילה או צריכה.",
-"verbs": [
-{
-"identity": {
-"lemma": "אָכַל",
-"binyan": "פָּעַל",
-"voice": "active",
-"english_translation": "to eat",
-"related_verbs": {
-"passive_counterpart": "נֶאֱכַל"
+  "root_family": {
+    "root": "א-כ-ל",
+    "gzera": "שלמים",
+    "root_meaning": {
+      "he": "אכילה, צריכה, כילוי",
+      "en": "eating, consumption, devouring"
+    },
+    "verbs": [
+      {
+        "binyan": "פָּעַל",
+        "lemma": "אָכַל",
+        "voice": "active",
+        "meaning": {
+          "he": "לאכול, לצרוך מזון",
+          "en": "to eat, to consume food"
+        },
+        "relations": { "passive": "נֶאֱכַל" },
+        "infinitive": { "niqqud": "לֶאֱכֹל", "plain": "לאכול" },
+        "conjugation": {
+          "past": {
+            "1s": "אָכַלְתִּי", "2ms": "אָכַלְתָּ", "2fs": "אָכַלְתְּ", "3ms": "אָכַל",
+            "3fs": "אָכְלָה", "1p": "אָכַלְנוּ", "2mp": "אֲכַלְתֶּם", "2fp": "אֲכַלְתֶּן",
+            "3p": "אָכְלוּ"
+          },
+          "present": {
+            "ms": "אוֹכֵל", "fs": "אוֹכֶלֶת", "mp": "אוֹכְלִים", "fp": "אוֹכְלוֹת"
+          },
+          "future": {
+            "1s": "אֹכַל", "2ms": "תֹּאכַל", "2fs": "תֹּאכְלִי", "3ms": "יֹאכַל",
+            "3fs": "תֹּאכַל", "1p": "נֹאכַל", "2mp": "תֹּאכְלוּ", "2fp": "תֹּאכַלְנָה",
+            "3p": "יֹאכְלוּ"
+          },
+          "imperative": {
+            "2ms": "אֱכֹל", "2fs": "אִכְלִי", "2mp": "אִכְלוּ", "2fp": "אֱכֹלְנָה"
+          }
+        },
+        "examples": [
+          { "he": "אני **אוכל** תפוח כל בוקר.", "en": "I eat an apple every morning." },
+          { "he": "הוא **אכל** ארוחת ערב טעימה.", "en": "He ate a delicious dinner." }
+        ]
+      },
+      {
+        "binyan": "נִפְעַל",
+        "lemma": "נֶאֱכַל",
+        "voice": "passive",
+        "meaning": { "he": "להיאכל, להיות נצרך", "en": "to be eaten, to be consumed" },
+        "relations": { "active": "אָכַל" },
+        "infinitive": { "niqqud": "לְהֵאָכֵל", "plain": "להיאכל" },
+        "conjugation": {
+          "past": {
+            "1s": "נֶאֱכַלְתִּי", "2ms": "נֶאֱכַלְתָּ", "2fs": "נֶאֱכַלְתְּ", "3ms": "נֶאֱכַל",
+            "3fs": "נֶאֶכְלָה", "1p": "נֶאֱכַלְנוּ", "2mp": "נֶאֱכַלְתֶּם", "2fp": "נֶאֱכַלְתֶּן",
+            "3p": "נֶאֶכְלוּ"
+          },
+          "present": {
+            "ms": "נֶאֱכָל", "fs": "נֶאֱכֶלֶת", "mp": "נֶאֱכָלִים", "fp": "נֶאֱכָלוֹת"
+          },
+          "future": {
+            "1s": "אֵאָכֵל", "2ms": "תֵּאָכֵל", "2fs": "תֵּאָכְלִי", "3ms": "יֵאָכֵל",
+            "3fs": "תֵּאָכֵל", "1p": "נֵאָכֵל", "2mp": "תֵּאָכְלוּ", "2fp": "תֵּאָכַלְנָה",
+            "3p": "יֵאָכְלוּ"
+          },
+          "imperative": {
+            "2ms": "הֵאָכֵל", "2fs": "הֵאָכְלִי", "2mp": "הֵאָכְלוּ", "2fp": "הֵאָכַלְנָה"
+          }
+        },
+        "examples": [
+          { "he": "העוגה **נאכלה** כולה תוך דקות.", "en": "The cake was entirely eaten within minutes." },
+          { "he": "האוכל המהיר עלול **להיאכל** במהירות.", "en": "Fast food might be eaten quickly." }
+        ]
+      },
+      {
+        "binyan": "פִּעֵל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש א-כ-ל במשמעות ישירה.", "en": "No common verbs in this binyan for root A-K-L in a direct sense." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "פֻּעַל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש א-כ-ל.", "en": "No common verbs in this binyan for root A-K-L." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הִפְעִיל",
+        "lemma": "הֶאֱכִיל",
+        "voice": "active-causative",
+        "meaning": { "he": "לתת אוכל, להגיש אוכל, לגרום למישהו לאכול", "en": "to feed, to cause someone to eat" },
+        "relations": { "passive": "הֻאֲכַל" },
+        "infinitive": { "niqqud": "לְהַאֲכִיל", "plain": "להאכיל" },
+        "conjugation": {
+          "past": {
+            "1s": "הֶאֱכַלְתִּי", "2ms": "הֶאֱכַלְתָּ", "2fs": "הֶאֱכַלְתְּ", "3ms": "הֶאֱכִיל",
+            "3fs": "הֶאֱכִילָה", "1p": "הֶאֱכַלְנוּ", "2mp": "הֶאֱכַלְתֶּם", "2fp": "הֶאֱכַלְתֶּן",
+            "3p": "הֶאֱכִילוּ"
+          },
+          "present": {
+            "ms": "מַאֲכִיל", "fs": "מַאֲכִילָה", "mp": "מַאֲכִילִים", "fp": "מַאֲכִילוֹת"
+          },
+          "future": {
+            "1s": "אַאֲכִיל", "2ms": "תַּאֲכִיל", "2fs": "תַּאֲכִילִי", "3ms": "יַאֲכִיל",
+            "3fs": "תַּאֲכִיל", "1p": "נַאֲכִיל", "2mp": "תַּאֲכִילוּ", "2fp": "תַּאֲכֵלְנָה",
+            "3p": "יַאֲכִילוּ"
+          },
+          "imperative": {
+            "2ms": "הַאֲכֵל", "2fs": "הַאֲכִילִי", "2mp": "הַאֲכִילוּ", "2fp": "הַאֲכֵלְנָה"
+          }
+        },
+        "examples": [
+          { "he": "האם **האכילה** את התינוק.", "en": "The mother fed the baby." },
+          { "he": "חשוב **להאכיל** את חיות המחמד בזמן.", "en": "It's important to feed pets on time." }
+        ]
+      },
+      {
+        "binyan": "הֻפְעַל",
+        "lemma": "הֻאֲכַל",
+        "voice": "passive",
+        "meaning": { "he": "להיות מוזן, להיות מקבל אוכל", "en": "to be fed" },
+        "relations": { "active": "הֶאֱכִיל" },
+        "infinitive": { "niqqud": "לְהֻאֲכַל", "plain": "להואכל" },
+        "conjugation": {
+          "past": {
+            "1s": "הֻאֲכַלְתִּי", "2ms": "הֻאֲכַלְתָּ", "2fs": "הֻאֲכַלְתְּ", "3ms": "הֻאֲכַל",
+            "3fs": "הֻאֲכְלָה", "1p": "הֻאֲכַלְנוּ", "2mp": "הֻאֲכַלְתֶּם", "2fp": "הֻאֲכַלְתֶּן",
+            "3p": "הֻאֲכְלוּ"
+          },
+          "present": {
+            "ms": "מֻאֲכָל", "fs": "מֻאֲכֶלֶת", "mp": "מֻאֲכָלִים", "fp": "מֻאֲכָלוֹת"
+          },
+          "future": {
+            "1s": "יֻאֲכַל", "2ms": "תֻּאֲכַל", "2fs": "תֻּאֲכְלִי", "3ms": "יֻאֲכַל",
+            "3fs": "תֻּאֲכַל", "1p": "נֻאֲכַל", "2mp": "תֻּאֲכְלוּ", "2fp": "תֻּאֲכַלְנָה",
+            "3p": "יֻאֲכְלוּ"
+          },
+          "imperative": {}
+        },
+        "examples": [
+          { "he": "הבקר **הואכל** בדשא טרי.", "en": "The cattle were fed fresh grass." }
+        ]
+      },
+      {
+        "binyan": "הִתְפַּעֵל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש א-כ-ל במשמעות ישירה.", "en": "No common verbs in this binyan for root A-K-L in a direct sense." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      }
+    ]
+  }
 }
-},
-"phonetics": {
-"ipa_standard": "/ʔaˈχal/",
-"transcription_common": "akhal"
-},
-"infinitive": {
-"with_niqqud": "לֶאֱכֹל",
-"without_niqqud": "לאכול"
-},
-"tenses": {
-"past": {
-"singular": { "1c": "אָכַלְתִּי", "2m": "אָכַלְתָּ", "2f": "אָכַלְתְּ", "3m": "אָכַל", "3f": "אָכְלָה" },
-"plural": { "1c": "אָכַלְנוּ", "2m": "אֲכַלְתֶּם", "2f": "אֲכַלְתֶּן", "3c": "אָכְלוּ" }
-},
-"present": {
-"singular": { "m": "אוֹכֵל", "f": "אוֹכֶלֶת" },
-"plural": { "m": "אוֹכְלִים", "f": "אוֹכְלוֹת" }
-},
-"future": {
-"singular": { "1c": "אֹכַל", "2m": "תֹּאכַל", "2f": "תֹּאכְלִי", "3m": "יֹאכַל", "3f": "תֹּאכַל" },
-"plural": { "1c": "נֹאכַל", "2c": "תֹּאכְלוּ", "3c": "יֹאכְלוּ" }
-},
-"imperative": {
-"singular": { "2m": "אֱכֹל", "2f": "אִכְלִי" },
-"plural": { "2c": "אִכְלוּ" }
-}
-}
-},
-{
-"identity": {
-"lemma": "נֶאֱכַל",
-"binyan": "נִפְעַל",
-"voice": "passive",
-"english_translation": "to be eaten",
-"related_verbs": {
-"active_counterpart": "אָכַל"
-}
-},
-"infinitive": {
-"with_niqqud": "לְהֵאָכֵל",
-"without_niqqud": "להיאכל"
-},
-"tenses": {
-"past": { "3m": "נֶאֱכַל" },
-"present": { "m": "נֶאֱכָל" },
-"future": { "3m": "יֵאָכֵל" },
-"imperative": null
-}
-}
-]
-}
-}
-```
