@@ -1,0 +1,68 @@
+{
+  "root_family": {
+    "root": "מ-ת-ח",
+    "gimel_gitit": "פ\"ת (שפתיים)",
+    "root_meaning_en": "The core concept of stretching or extending.",
+    "root_meaning_he": "הרעיון המרכזי של מתיחה או הארכה.",
+    "verbs": [
+      {
+        "identity": {
+          "lemma": "מָתַח",
+          "binyan": "פָּעַל",
+          "voice": "active",
+          "english_translation": "to stretch",
+          "related_verbs": {
+            "passive_counterpart": "נִמְתַּח"
+          }
+        },
+        "phonetics": {
+          "ipa_standard": "/maˈtaχ/",
+          "transcription_common": "matach"
+        },
+        "infinitive": {
+          "with_niqqud": "לִמְתֹחַ",
+          "without_niqqud": "למתוח"
+        },
+        "tenses": {
+          "past": {
+            "singular": { "1c": "מָתַחְתִּי", "2m": "מָתַחְתָּ", "2f": "מָתַחְתְּ", "3m": "מָתַח", "3f": "מָתְחָה" },
+            "plural": { "1c": "מָתַחְנוּ", "2m": "מְתַחְתֶּם", "2f": "מְתַחְתֶּן", "3c": "מָתְחוּ" }
+          },
+          "present": {
+            "singular": { "m": "מוֹתֵחַ", "f": "מוֹתֶחֶת" },
+            "plural": { "m": "מוֹתְחִים", "f": "מוֹתְחוֹת" }
+          },
+          "future": {
+            "singular": { "1c": "אֶמְתֹּחַ", "2m": "תִּמְתֹּחַ", "2f": "תִּמְתְחִי", "3m": "יִמְתֹּחַ", "3f": "תִּמְתֹּחַ" },
+            "plural": { "1c": "נִמְתֹּחַ", "2c": "תִּמְתְחוּ", "3c": "יִמְתְחוּ" }
+          },
+          "imperative": {
+            "singular": { "2m": "מְתֹחַ", "2f": "מְתְחִי" },
+            "plural": { "2c": "מְתְחוּ" }
+          }
+        }
+      },
+      {
+        "identity": {
+          "lemma": "נִמְתַּח",
+          "binyan": "נִפְעַל",
+          "voice": "passive",
+          "english_translation": "to be stretched",
+          "related_verbs": {
+            "active_counterpart": "מָתַח"
+          }
+        },
+        "infinitive": {
+          "with_niqqud": "לְהִמָּתֵחַ",
+          "without_niqqud": "להימתח"
+        },
+        "tenses": {
+          "past": { "3m": "נִמְתַּח" },
+          "present": { "m": "נִמְתָּח" },
+          "future": { "3m": "יִמָּתֵחַ" },
+          "imperative": null
+        }
+      }
+    ]
+  }
+}
