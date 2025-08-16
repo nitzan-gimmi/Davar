@@ -1,67 +1,309 @@
-
-```json
 {
-"root_family": {
-"root": "ק-ו-ם",
-"gimel_gitit": "ע\"ו (חלולים)",
-"root_meaning_en": "The core concept of rising, getting up, or establishing.",
-"root_meaning_he": "הרעיון המרכזי של קימה, התרוממות או הקמה.",
-"verbs": [
-{
-"identity": {
-"lemma": "קָם",
-"binyan": "פָּעַל",
-"voice": "active",
-"english_translation": "to get up, to rise",
-"related_verbs": {}
-},
-"infinitive": {
-"with_niqqud": "לָקוּם",
-"without_niqqud": "לקום"
-},
-"tenses": {
-"past": { "singular": { "1c": "קַמְתִּי", "2m": "קַמְתָּ", "3m": "קָם" } },
-"present": { "singular": { "m": "קָם", "f": "קָמָה" } },
-"future": { "singular": { "1c": "אָקוּם", "2m": "תָּקוּם", "3m": "יָקוּם" } },
-"imperative": { "singular": { "2m": "קוּם" } }
+  "root_family": {
+    "root": "ק-ו-מ",
+    "gzera": "נע\"ו/י (עי\"ו)",
+    "root_meaning": {
+      "he": "עמידה, התרוממות, התייצבות, קיום",
+      "en": "standing, rising, existing, establishing"
+    },
+    "verbs": [
+      {
+        "binyan": "פָּעַל",
+        "lemma": "קָם",
+        "voice": "active",
+        "meaning": {
+          "he": "לעמוד, להתרומם, להתעורר משנתו, להתחיל",
+          "en": "to stand up, to rise, to get up, to begin"
+        },
+        "relations": {},
+        "infinitive": { "niqqud": "לָקוּם", "plain": "לקום" },
+        "conjugation": {
+          "past": {
+            "1s": "קַמְתִּי", "2ms": "קַמְתָּ", "2fs": "קַמְתְּ", "3ms": "קָם",
+            "3fs": "קָמָה", "1p": "קַמְנוּ", "2mp": "קַמְתֶּם", "2fp": "קַמְתֶּן",
+            "3p": "קָמוּ"
+          },
+          "present": {
+            "ms": "קָם", "fs": "קָמָה", "mp": "קָמִים", "fp": "קָמוֹת"
+          },
+          "future": {
+            "1s": "אָקוּם", "2ms": "תָּקוּם", "2fs": "תָּקוּמִי", "3ms": "יָקוּם",
+            "3fs": "תָּקוּם", "1p": "נָקוּם", "2mp": "תָּקוּמוּ", "2fp": "תָּקוּמְנָה",
+            "3p": "יָקוּמוּ"
+          },
+          "imperative": {
+            "2ms": "קוּם", "2fs": "קוּמִי", "2mp": "קוּמוּ", "2fp": "קוּמְנָה"
+          }
+        },
+        "examples": [
+          { "he": "הוא **קם** מכיסאו.", "en": "He stood up from his chair." },
+          { "he": "העם **קם** לתחייה.", "en": "The nation revived." }
+        ]
+      },
+      {
+        "binyan": "נִפְעַל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים בבניין זה לשורש ק-ו-מ.", "en": "No verbs in this binyan for root Q-W-M." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הִפְעִיל",
+        "lemma": "הֵקִים",
+        "voice": "active-causative",
+        "meaning": {
+          "he": "להעמיד, לבנות, לייסד, להקים דבר מה",
+          "en": "to establish, to set up, to raise"
+        },
+        "relations": { "passive": "הֻקַּם" },
+        "infinitive": { "niqqud": "לְהָקִים", "plain": "להקים" },
+        "conjugation": {
+          "past": {
+            "1s": "הֵקַמְתִּי", "2ms": "הֵקַמְתָּ", "2fs": "הֵקַמְתְּ", "3ms": "הֵקִים",
+            "3fs": "הֵקִימָה", "1p": "הֵקַמְנוּ", "2mp": "הֵקַמְתֶּם", "2fp": "הֵקַמְתֶּן",
+            "3p": "הֵקִימוּ"
+          },
+          "present": {
+            "ms": "מֵקִים", "fs": "מְקִימָה", "mp": "מְקִימִים", "fp": "מְקִימוֹת"
+          },
+          "future": {
+            "1s": "אָקִים", "2ms": "תָּקִים", "2fs": "תָּקִימִי", "3ms": "יָקִים",
+            "3fs": "תָּקִים", "1p": "נָקִים", "2mp": "תָּקִימוּ", "2fp": "תָּקֵמְנָה",
+            "3p": "יָקִימוּ"
+          },
+          "imperative": {
+            "2ms": "הָקֵם", "2fs": "הָקִימִי", "2mp": "הָקִימוּ", "2fp": "הָקֵמְנָה"
+          }
+        },
+        "examples": [
+          { "he": "הוא **הקים** מפעל חדש.", "en": "He established a new factory." },
+          { "he": "המורה **הקימה** את התלמידים.", "en": "The teacher raised the students (made them stand up)." }
+        ]
+      },
+      {
+        "binyan": "הֻפְעַל",
+        "lemma": "הוּקַּם",
+        "voice": "passive",
+        "meaning": {
+          "he": "הועמד, נבנה, נוסד, הוקם",
+          "en": "to be established, to be set up, to be raised"
+        },
+        "relations": { "active": "הֵקִים" },
+        "infinitive": { "niqqud": "לְהוּקַּם", "plain": "להוקם" },
+        "conjugation": {
+          "past": {
+            "1s": "הוּקַמְתִּי", "2ms": "הוּקַמְתָּ", "2fs": "הוּקַמְתְּ", "3ms": "הוּקַּם",
+            "3fs": "הוּקְמָה", "1p": "הוּקַמְנוּ", "2mp": "הוּקַמְתֶּם", "2fp": "הוּקַמְתֶּן",
+            "3p": "הוּקְמוּ"
+          },
+          "present": {
+            "ms": "מוּקָם", "fs": "מוּקֶמֶת", "mp": "מוּקָמִים", "fp": "מוּקָמוֹת"
+          },
+          "future": {
+            "1s": "אוּקַּם", "2ms": "תּוּקַּם", "2fs": "תּוּקְמִי", "3ms": "יוּקַּם",
+            "3fs": "תּוּקַּם", "1p": "נוּקַּם", "2mp": "תּוּקְמוּ", "2fp": "תּוּקַמְנָה",
+            "3p": "יוּקְמוּ"
+          },
+          "imperative": {}
+        },
+        "examples": [
+          { "he": "המבנה **הוקם** במהירות.", "en": "The building was established quickly." }
+        ]
+      },
+      {
+        "binyan": "פִּעֵל",
+        "lemma": "קִיֵּם",
+        "voice": "active-intensive",
+        "meaning": {
+          "he": "להוציא לפועל, לבצע, לשמור על קיומו של דבר",
+          "en": "to fulfill, to perform, to maintain, to exist"
+        },
+        "relations": { "passive": "קֻיַּם" },
+        "infinitive": { "niqqud": "לְקַיֵּם", "plain": "לקיים" },
+        "conjugation": {
+          "past": {
+            "1s": "קִיַּמְתִּי", "2ms": "קִיַּמְתָּ", "2fs": "קִיַּמְתְּ", "3ms": "קִיֵּם",
+            "3fs": "קִיְּמָה", "1p": "קִיַּמְנוּ", "2mp": "קִיַּמְתֶּם", "2fp": "קִיַּמְתֶּן",
+            "3p": "קִיְּמוּ"
+          },
+          "present": {
+            "ms": "מְקַיֵּם", "fs": "מְקַיֶּמֶת", "mp": "מְקַיְּמִים", "fp": "מְקַיְּמוֹת"
+          },
+          "future": {
+            "1s": "אֲקַיֵּם", "2ms": "תְּקַיֵּם", "2fs": "תְּקַיְּמִי", "3ms": "יְקַיֵּם",
+            "3fs": "תְּקַיֵּם", "1p": "נְקַיֵּם", "2mp": "תְּקַיְּמוּ", "2fp": "תְּקַיֵּמְנָה",
+            "3p": "יְקַיֵּמוּ"
+          },
+          "imperative": {
+            "2ms": "קַיֵּם", "2fs": "קַיְּמִי", "2mp": "קַיְּמוּ", "2fp": "קַיֵּמְנָה"
+          }
+        },
+        "examples": [
+          { "he": "הוא **קיים** את הבטחתו.", "en": "He fulfilled his promise." },
+          { "he": "החברה **מקיימת** סטנדרטים גבוהים.", "en": "The company maintains high standards." }
+        ]
+      },
+      {
+        "binyan": "פִּעֵל",
+        "lemma": "קוֹמֵם",
+        "voice": "active-intensive",
+        "meaning": {
+          "he": "להמריד, לעורר, לשקם (הריסות)",
+          "en": "to incite, to revolt, to restore (ruins)"
+        },
+        "relations": { "passive": "קוֹמַם" },
+        "infinitive": { "niqqud": "לְקוֹמֵם", "plain": "לקומם" },
+        "conjugation": {
+          "past": {
+            "1s": "קוֹמַמְתִּי", "2ms": "קוֹמַמְתָּ", "2fs": "קוֹמַמְתְּ", "3ms": "קוֹמֵם",
+            "3fs": "קוֹמְמָה", "1p": "קוֹמַמְנוּ", "2mp": "קוֹמַמְתֶּם", "2fp": "קוֹמַמְתֶּן",
+            "3p": "קוֹמְמוּ"
+          },
+          "present": {
+            "ms": "מְקוֹמֵם", "fs": "מְקוֹמֶמֶת", "mp": "מְקוֹמְמִים", "fp": "מְקוֹמְמוֹת"
+          },
+          "future": {
+            "1s": "אֲקוֹמֵם", "2ms": "תְּקוֹמֵם", "2fs": "תְּקוֹמְמִי", "3ms": "יְקוֹמֵם",
+            "3fs": "תְּקוֹמֵם", "1p": "נְקוֹמֵם", "2mp": "תְּקוֹמְמוּ", "2fp": "תְּקוֹמֵמְנָה",
+            "3p": "יְקוֹמְמוּ"
+          },
+          "imperative": {
+            "2ms": "קוֹמֵם", "2fs": "קוֹמְמִי", "2mp": "קוֹמְמוּ", "2fp": "קוֹמֵמְנָה"
+          }
+        },
+        "examples": [
+          { "he": "הוא **קומם** את העם למרד.", "en": "He incited the people to rebellion." },
+          { "he": "הם **קוממו** את ההריסות.", "en": "They restored the ruins." }
+        ]
+      },
+      {
+        "binyan": "פֻּעַל",
+        "lemma": "קֻיַּם",
+        "voice": "passive",
+        "meaning": {
+          "he": "הוצא לפועל, בוצע, נשמר על קיומו",
+          "en": "to be fulfilled, to be performed, to be maintained"
+        },
+        "relations": { "active": "קִיֵּם" },
+        "infinitive": null,
+        "conjugation": {
+          "past": {
+            "1s": "קֻיַּמְתִּי", "2ms": "קֻיַּמְתָּ", "2fs": "קֻיַּמְתְּ", "3ms": "קֻיַּם",
+            "3fs": "קֻיְּמָה", "1p": "קֻיַּמְנוּ", "2mp": "קֻיַּמְתֶּם", "2fp": "קֻיַּמְתֶּן",
+            "3p": "קֻיְּמוּ"
+          },
+          "present": {
+            "ms": "מְקֻיָּם", "fs": "מְקֻיֶּמֶת", "mp": "מְקֻיָּמִים", "fp": "מְקֻיָּמוֹת"
+          },
+          "future": {
+            "1s": "יֻקַּיֵּם", "2ms": "תֻקַּיֵּם", "2fs": "תֻקַּיְּמִי", "3ms": "יֻקַּיֵּם",
+            "3fs": "תֻקַּיֵּם", "1p": "נֻקַּיֵּם", "2mp": "תֻקַּיְּמוּ", "2fp": "תֻקַּיֵּמְנָה",
+            "3p": "יֻקַּיֵּמוּ"
+          },
+          "imperative": {}
+        },
+        "examples": [
+          { "he": "ההסכם **קויים** במלואו.", "en": "The agreement was fulfilled in full." }
+        ]
+      },
+      {
+        "binyan": "פֻּעַל",
+        "lemma": "קוֹמַם",
+        "voice": "passive",
+        "meaning": {
+          "he": "הומְרד, עורער, שוקם",
+          "en": "to be incited, to be restored"
+        },
+        "relations": { "active": "קוֹמֵם" },
+        "infinitive": null,
+        "conjugation": {
+          "past": {
+            "1s": "קוּמַּמְתִּי", "2ms": "קוּמַּמְתָּ", "2fs": "קוּמַּמְתְּ", "3ms": "קוּמַּם",
+            "3fs": "קוּמְּמָה", "1p": "קוּמַּמְנוּ", "2mp": "קוּמַּמְתֶּם", "2fp": "קוּמַּמְתֶּן",
+            "3p": "קוּמְּמוּ"
+          },
+          "present": {
+            "ms": "מְקוֹמָם", "fs": "מְקוֹמֶמֶת", "mp": "מְקוֹמָמִים", "fp": "מְקוֹמָמוֹת"
+          },
+          "future": {
+            "1s": "יְקוּמַּם", "2ms": "תְּקוּמַּם", "2fs": "תְּקוּמְּמִי", "3ms": "יְקוּמַּם",
+            "3fs": "תְּקוּמַּם", "1p": "נְקוּמַּם", "2mp": "תְּקוּמְּמוּ", "2fp": "תְּקוּמַּמְנָה",
+            "3p": "יְקוּמְּמוּ"
+          },
+          "imperative": {}
+        },
+        "examples": [
+          { "he": "העם **קומם** נגד השלטון.", "en": "The people were incited against the regime." }
+        ]
+      },
+      {
+        "binyan": "הִתְפַּעֵל",
+        "lemma": "הִתְקַיֵּם",
+        "voice": "reflexive",
+        "meaning": {
+          "he": "להתרחש, להשתמר, להיות קיים",
+          "en": "to take place, to exist, to be held"
+        },
+        "relations": {},
+        "infinitive": { "niqqud": "לְהִתְקַיֵּם", "plain": "להתקיים" },
+        "conjugation": {
+          "past": {
+            "1s": "הִתְקַיַּמְתִּי", "2ms": "הִתְקַיַּמְתָּ", "2fs": "הִתְקַיַּמְתְּ", "3ms": "הִתְקַיֵּם",
+            "3fs": "הִתְקַיְּמָה", "1p": "הִתְקַיַּמְנוּ", "2mp": "הִתְקַיַּמְתֶּם", "2fp": "הִתְקַיַּמְתֶּן",
+            "3p": "הִתְקַיְּמוּ"
+          },
+          "present": {
+            "ms": "מִתְקַיֵּם", "fs": "מִתְקַיֶּמֶת", "mp": "מִתְקַיְּמִים", "fp": "מִתְקַיְּמוֹת"
+          },
+          "future": {
+            "1s": "אֶתְקַיֵּם", "2ms": "תִּתְקַיֵּם", "2fs": "תִּתְקַיְּמִי", "3ms": "יִתְקַיֵּם",
+            "3fs": "תִּתְקַיֵּם", "1p": "נִתְקַיֵּם", "2mp": "תִּתְקַיְּמוּ", "2fp": "תִּתְקַיֵּמְנָה",
+            "3p": "יִתְקַיְּמוּ"
+          },
+          "imperative": {
+            "2ms": "הִתְקַיֵּם", "2fs": "הִתְקַיְּמִי", "2mp": "הִתְקַיְּמוּ", "2fp": "הִתְקַיֵּמְנָה"
+          }
+        },
+        "examples": [
+          { "he": "האירוע **יתקיים** מחר.", "en": "The event will take place tomorrow." },
+          { "he": "המסורת **מתקיימת** עד היום.", "en": "The tradition exists/is maintained to this day." }
+        ]
+      },
+      {
+        "binyan": "הִתְפַּעֵל",
+        "lemma": "הִתְקוֹמֵם",
+        "voice": "reflexive/reciprocal",
+        "meaning": {
+          "he": "למרוד, להתנגד, להתנער",
+          "en": "to revolt, to rebel, to resist"
+        },
+        "relations": {},
+        "infinitive": { "niqqud": "לְהִתְקוֹמֵם", "plain": "להתקומם" },
+        "conjugation": {
+          "past": {
+            "1s": "הִתְקוֹמַמְתִּי", "2ms": "הִתְקוֹמַמְתָּ", "2fs": "הִתְקוֹמַמְתְּ", "3ms": "הִתְקוֹמֵם",
+            "3fs": "הִתְקוֹמְמָה", "1p": "הִתְקוֹמַמְנוּ", "2mp": "הִתְקוֹמַמְתֶּם", "2fp": "הִתְקוֹמַמְתֶּן",
+            "3p": "הִתְקוֹמְמוּ"
+          },
+          "present": {
+            "ms": "מִתְקוֹמֵם", "fs": "מִתְקוֹמֶמֶת", "mp": "מִתְקוֹמְמִים", "fp": "מִתְקוֹמְמוֹת"
+          },
+          "future": {
+            "1s": "אֶתְקוֹמֵם", "2ms": "תִּתְקוֹמֵם", "2fs": "תִּתְקוֹמְמִי", "3ms": "יִתְקוֹמֵם",
+            "3fs": "תִּתְקוֹמֵם", "1p": "נִתְקוֹמֵם", "2mp": "תִּתְקוֹמְמוּ", "2fp": "תִּתְקוֹמֵמְנָה",
+            "3p": "יִתְקוֹמְמוּ"
+          },
+          "imperative": {
+            "2ms": "הִתְקוֹמֵם", "2fs": "הִתְקוֹמְמִי", "2mp": "הִתְקוֹמְמוּ", "2fp": "הִתְקוֹמֵמְנָה"
+          }
+        },
+        "examples": [
+          { "he": "הם **התקוממו** נגד העוול.", "en": "They rebelled against the injustice." }
+        ]
+      }
+    ]
+  }
 }
-},
-{
-"identity": {
-"lemma": "הֵקִים",
-"binyan": "הִפְעִיל",
-"voice": "active (causative)",
-"english_translation": "to establish, to set up",
-"related_verbs": { "passive_counterpart": "הוּקַם" }
-},
-"infinitive": {
-"with_niqqud": "לְהָקִים",
-"without_niqqud": "להקים"
-},
-"tenses": {
-"past": { "3m": "הֵקִים" },
-"present": { "m": "מֵקִים" },
-"future": { "3m": "יָקִים" },
-"imperative": { "2m": "הָקֵם" }
-}
-},
-{
-"identity": {
-"lemma": "הוּקַם",
-"binyan": "הֻפְעַל",
-"voice": "passive",
-"english_translation": "to be established",
-"related_verbs": { "active_counterpart": "הֵקִים" }
-},
-"infinitive": null,
-"tenses": {
-"past": { "3m": "הוּקַם" },
-"present": { "m": "מוּקָם" },
-"future": { "3m": "יוּקַם" },
-"imperative": null
-}
-}
-]
-}
-}
-```
