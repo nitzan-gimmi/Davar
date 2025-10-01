@@ -119,9 +119,32 @@ IGNORE_WHEN_COPYING_END
 
 אנחנו בונים את זה יחד! נשמח לקבל Pull Requests, דיווחי באגים, הרחבות של שורשים חדשים ושיפורים לתוכנית הלימודים.
 
+
+
+🧱 גרסה: HFBT-1.0.0-beta
+
+HFBT-Project/ ├── README.md ├── LICENSE ├── setup.py ├── hfbt_setup.sh ├── requirements.txt ├── run_all_tests.py ├── docs/ │ ├── overview.md │ ├── benchmarks.md │ └── contribution.md ├── src/ │ ├── __init__.py │ ├── hfbt_processor.py │ ├── decay_model.py │ ├── gui_app.py │ └── utils.py ├── datasets/ │ ├── sample_texts.json │ └── benchmarks.json ├── tests/ │ ├── test_hfbt.py │ └── test_decay.py └── examples/ └── interactive_demo.py 
+
+🧩 setup.py (עדכון גרסה)
+
+setup( name="HFBT", version="1.0.0-beta", author="נִצן בנין", author_email="contact@hfbt.org", description="HFBT — Hebrew Factor-Based Tokenization (Pilot Open Release)", long_description=long_description, ... ) 
+
+🧰 hfbt_setup.sh
+
+#!/bin/bash echo "🌿 מתקין את גרסת הפיילוט הפתוחה של HFBT v1.0.0-beta" python3 -m venv .venv source .venv/bin/activate pip install --upgrade pip pip install -r requirements.txt echo "🧪 מריץ בדיקות..." python run_all_tests.py echo "🚀 מפעיל ממשק גרפי..." streamlit run src/gui_app.py echo "✅ HFBT (beta) הותקן בהצלחה!" 
+
+🌍 README.md (סיום עדכני)
+
+# 🌿 HFBT — Hebrew Factor-Based Tokenization (v1.0.0-beta) גרסת פיילוט פתוחה לשיתוף, למידה, ובניית בסיס לעיבוד עברית מבוסס גורמים. > “כולנו תורמים לצמיחה של שפה אחת.” — נִצן בנין --- 
+
+
+
+
 אנא קרא את CONTRIBUTING.md להנחיות מפורטות.
 
 📄 רישיון
+
+
 
 MIT © 2025 – נִצן בְּנִין & Google Gemini.
 
