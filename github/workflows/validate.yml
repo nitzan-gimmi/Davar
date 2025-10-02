@@ -1,0 +1,25 @@
+`yaml
+name: Validate and Test
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install deps
+        run: pip install jsonschema yamllint
+      - name: JSON Schema Validation
+        run: |
+          python -c "import glob, json, sys; from jsonschema import Draft7Validator; schemapath='schemas/root.schema.json'; schema=json.load(open(schemapath,'r',encoding='utf-8')); ok=True; \
+          import pathlib; \
+          for p in pathlib.Path('data/roots').glob('*.json'): obj=json.load(open(p,'r',encoding='utf-8')); \
+            try: Draft7Validator(schema).validate(obj); \
+            except Exception as e: print('Schema fail',p,e); ok=False; \
+          sys.exit(0 if ok else 1)"
+      - name: Run Tests
+        run: python runalltests.py
+`
