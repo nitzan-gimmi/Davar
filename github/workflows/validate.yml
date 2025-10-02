@@ -1,4 +1,3 @@
-`yaml
 name: Validate and Test
 on: [push, pull_request]
 jobs:
@@ -6,20 +5,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Install deps
-        run: pip install jsonschema yamllint
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+
       - name: JSON Schema Validation
         run: |
-          python -c "import glob, json, sys; from jsonschema import Draft7Validator; schemapath='schemas/root.schema.json'; schema=json.load(open(schemapath,'r',encoding='utf-8')); ok=True; \
-          import pathlib; \
-          for p in pathlib.Path('data/roots').glob('*.json'): obj=json.load(open(p,'r',encoding='utf-8')); \
-            try: Draft7Validator(schema).validate(obj); \
-            except Exception as e: print('Schema fail',p,e); ok=False; \
-          sys.exit(0 if ok else 1)"
-      - name: Run Tests
-        run: python runalltests.py
-`
+          python - <<'PY'
+          import sys, json
+          from pathlib import Path
+          from jsonschema import Draft7Validator
+
+          schemapath = Path("schemas/root.schema.json")
+          if not schemapath.exists():
+              print("Schema not found:", schemapath)
+              sys.exit(1)
+          schema = json.loads(schemapath.read_text(encoding='utf-8'))
+          validator = Draft7Validator(schema)
+
+          errors = 0
+          for p in Path("data/roots").rglob("*.json"):
+              obj = json.loads(p.read_text(encoding='utf-8'))
+              errs = list(validator.iter_errors(obj))
+              if errs:
+                  print(f"Validation errors in {p}:")
+                  for e in errs:
+                      print(" -", e.message)
+                  errors += 1
+              else:
+                  print(f"Validated {p}")
+          if errors:
+              print(f"{errors} file(s) failed validation")
+              sys.exit(1)
+          print("All JSON files validated successfully")
+          PY
+
+      - name: Run all tests
+        run: python run_all_tests.py
