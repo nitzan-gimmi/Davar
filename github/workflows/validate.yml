@@ -1,0 +1,51 @@
+name: Validate and Test
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+
+      - name: JSON Schema Validation
+        run: |
+          python - <<'PY'
+          import sys, json
+          from pathlib import Path
+          from jsonschema import Draft7Validator
+
+          schemapath = Path("schemas/root.schema.json")
+          if not schemapath.exists():
+              print("Schema not found:", schemapath)
+              sys.exit(1)
+          schema = json.loads(schemapath.read_text(encoding='utf-8'))
+          validator = Draft7Validator(schema)
+
+          errors = 0
+          for p in Path("data/roots").rglob("*.json"):
+              obj = json.loads(p.read_text(encoding='utf-8'))
+              errs = list(validator.iter_errors(obj))
+              if errs:
+                  print(f"Validation errors in {p}:")
+                  for e in errs:
+                      print(" -", e.message)
+                  errors += 1
+              else:
+                  print(f"Validated {p}")
+          if errors:
+              print(f"{errors} file(s) failed validation")
+              sys.exit(1)
+          print("All JSON files validated successfully")
+          PY
+
+      - name: Run all tests
+        run: python run_all_tests.py
