@@ -1,0 +1,125 @@
+{
+  "root_family": {
+    "root": "ב-ר-א",
+    "gzera": "שלמים",
+    "root_meaning": {
+      "he": "בריאה, יצירה, המצאה",
+      "en": "creation, forming, bringing into existence"
+    },
+    "verbs": [
+      {
+        "binyan": "פָּעַל",
+        "lemma": "בָּרָא",
+        "voice": "active",
+        "meaning": {
+          "he": "לברוא, ליצור משהו חדש, להביא לידי קיום",
+          "en": "to create, to bring into being, to form something new"
+        },
+        "relations": { "passive": "נִבְרָא" },
+        "infinitive": { "niqqud": "לִבְרֹא", "plain": "לברוא" },
+        "conjugation": {
+          "past": {
+            "1s": "בָּרָאתִי", "2ms": "בָּרָאתָ", "2fs": "בָּרָאת", "3ms": "בָּרָא",
+            "3fs": "בָּרְאָה", "1p": "בָּרָאנוּ", "2mp": "בְּרָאתֶם", "2fp": "בְּרָאתֶן",
+            "3p": "בָּרְאוּ"
+          },
+          "present": {
+            "ms": "בּוֹרֵא", "fs": "בּוֹרֵאת", "mp": "בּוֹרְאִים", "fp": "בּוֹרְאוֹת"
+          },
+          "future": {
+            "1s": "אֶבְרָא", "2ms": "תִּבְרָא", "2fs": "תִּבְרְאִי", "3ms": "יִבְרָא",
+            "3fs": "תִּבְרָא", "1p": "נִבְרָא", "2mp": "תִּבְרְאוּ", "2fp": "תִּבְרֶאנָה",
+            "3p": "יִבְרְאוּ"
+          },
+          "imperative": {
+            "2ms": "בְּרָא", "2fs": "בִּרְאִי", "2mp": "בִּרְאוּ", "2fp": "בְּרֶאנָה"
+          }
+        },
+        "examples": [
+          { "he": "בְּרֵאשִׁית **בָּרָא** אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ.", "en": "In the beginning, God created the heavens and the earth." },
+          { "he": "האמן **בורא** יצירות מופת.", "en": "The artist creates masterpieces." }
+        ]
+      },
+      {
+        "binyan": "נִפְעַל",
+        "lemma": "נִבְרָא",
+        "voice": "passive",
+        "meaning": { "he": "להיברא, להיווצר, להתהוות", "en": "to be created, to be formed, to come into being" },
+        "relations": { "active": "בָּרָא" },
+        "infinitive": { "niqqud": "לְהִבָּרֵא", "plain": "להיברא" },
+        "conjugation": {
+          "past": {
+            "1s": "נִבְרֵאתִי", "2ms": "נִבְרֵאתָ", "2fs": "נִבְרֵאת", "3ms": "נִבְרָא",
+            "3fs": "נִבְרְאָה", "1p": "נִבְרֵאנוּ", "2mp": "נִבְרֵאתֶם", "2fp": "נִבְרֵאתֶן",
+            "3p": "נִבְרְאוּ"
+          },
+          "present": {
+            "ms": "נִבְרָא", "fs": "נִבְרֵאת", "mp": "נִבְרָאִים", "fp": "נִבְרָאוֹת"
+          },
+          "future": {
+            "1s": "אִבָּרֵא", "2ms": "תִּבָּרֵא", "2fs": "תִּבָּרְאִי", "3ms": "יִבָּרֵא",
+            "3fs": "תִּבָּרֵא", "1p": "נִבָּרֵא", "2mp": "תִּבָּרְאוּ", "2fp": "תִּבָּרֶאנָה",
+            "3p": "יִבָּרְאוּ"
+          },
+          "imperative": {
+            "2ms": "הִבָּרֵא", "2fs": "הִבָּרְאִי", "2mp": "הִבָּרְאוּ", "2fp": "הִבָּרֶאנָה"
+          }
+        },
+        "examples": [
+          { "he": "האדם **נברא** בצלם אלוהים.", "en": "Man was created in the image of God." },
+          { "he": "העולם **נברא** בששת ימים.", "en": "The world was created in six days." }
+        ]
+      },
+      {
+        "binyan": "פִּעֵל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש ב-ר-א.", "en": "No common verbs in this binyan for root B-R-A." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "פֻּעַל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש ב-ר-א.", "en": "No common verbs in this binyan for root B-R-A." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הִפְעִיל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש ב-ר-א במשמעות ישירה.", "en": "No common verbs in this binyan for root B-R-A in a direct sense." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הֻפְעַל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש ב-ר-א.", "en": "No common verbs in this binyan for root B-R-A." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הִתְפַּעֵל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין פעלים נפוצים בבניין זה לשורש ב-ר-א במשמעות ישירה.", "en": "No common verbs in this binyan for root B-R-A in a direct sense." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      }
+    ]
+  }
+}
