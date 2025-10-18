@@ -1,0 +1,68 @@
+{
+  "root_family": {
+    "root": "ב-ר-א",
+    "gimel_gitit": "שלמים",
+    "root_meaning_en": "The core concept of creation, bringing into existence.",
+    "root_meaning_he": "הרעיון המרכזי של בריאה, הבאה לעולם.",
+    "verbs": [
+      {
+        "identity": {
+          "lemma": "בָּרָא",
+          "binyan": "פָּעַל",
+          "voice": "active",
+          "english_translation": "to create",
+          "related_verbs": {
+            "passive_counterpart": "נִבְרָא"
+          }
+        },
+        "phonetics": {
+          "ipa_standard": "/baˈra/",
+          "transcription_common": "bara"
+        },
+        "infinitive": {
+          "with_niqqud": "לִבְרֹא",
+          "without_niqqud": "לברוא"
+        },
+        "tenses": {
+          "past": {
+            "singular": { "1c": "בָּרָאתִי", "2m": "בָּרָאתָ", "2f": "בָּרָאת", "3m": "בָּרָא", "3f": "בָּרְאָה" },
+            "plural": { "1c": "בָּרָאנוּ", "2m": "בְּרָאתֶם", "2f": "בְּרָאתֶן", "3c": "בָּרְאוּ" }
+          },
+          "present": {
+            "singular": { "m": "בּוֹרֵא", "f": "בּוֹרֵאת" },
+            "plural": { "m": "בּוֹרְאִים", "f": "בּוֹרְאוֹת" }
+          },
+          "future": {
+            "singular": { "1c": "אֶבְרָא", "2m": "תִּבְרָא", "2f": "תִּבְרְאִי", "3m": "יִבְרָא", "3f": "תִּבְרָא" },
+            "plural": { "1c": "נִבְרָא", "2c": "תִּבְרְאוּ", "3c": "יִבְרְאוּ" }
+          },
+          "imperative": {
+            "singular": { "2m": "בְּרָא", "2f": "בִּרְאִי" },
+            "plural": { "2c": "בִּרְאוּ" }
+          }
+        }
+      },
+      {
+        "identity": {
+          "lemma": "נִבְרָא",
+          "binyan": "נִפְעַל",
+          "voice": "passive",
+          "english_translation": "to be created",
+          "related_verbs": {
+            "active_counterpart": "בָּרָא"
+          }
+        },
+        "infinitive": {
+          "with_niqqud": "לְהִבָּרֵא",
+          "without_niqqud": "להיבָּרא"
+        },
+        "tenses": {
+          "past": { "singular": { "1c": "נִבְרֵאתִי", "2m": "נִבְרֵאתָ", "2f": "נִבְרֵאת", "3m": "נִבְרָא", "3f": "נִבְרְאָה" }, "plural": { "1c": "נִבְרֵאנוּ", "2m": "נִבְרֵאתֶם", "2f": "נִבְרֵאתֶן", "3c": "נִבְרְאוּ" } },
+          "present": { "singular": { "m": "נִבְרָא", "f": "נִבְרֵאת" }, "plural": { "m": "נִבְרָאִים", "f": "נִבְרָאוֹת" } },
+          "future": { "singular": { "1c": "אִבָּרֵא", "2m": "תִּבָּרֵא", "2f": "תִּבָּרְאִי", "3m": "יִבָּרֵא", "3f": "תִּבָּרֵא" }, "plural": { "1c": "נִבָּרֵא", "2c": "תִּבָּרְאוּ", "3c": "יִבָּרְאוּ" } },
+          "imperative": null
+        }
+      }
+    ]
+  }
+}
