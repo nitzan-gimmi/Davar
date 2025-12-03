@@ -1,74 +1,127 @@
-
 {
-  "root": "עשה",
-  "derivations": [
-    {
-      "binyan": "קל",
-      "tense": "עבר",
-      "inflections": [
-        {"person": "אני", "gender": null, "number": "יחיד", "form": "עשיתי"},
-        {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "עשית"},
-        {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "עשית"},
-        {"person": "היא", "gender": "נקבה", "number": "יחיד", "form": "עשתה"},
-        {"person": "הוא", "gender": "זכר", "number": "יחיד", "form": "עשה"},
-        {"person": "אנחנו", "gender": null, "number": "רבים", "form": "עשינו"},
-        {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "עשיתן"},
-        {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "עשיתם"},
-        {"person": "הן", "gender": "נקבה", "number": "רבים", "form": "עשו"},
-        {"person": "הם", "gender": "זכר", "number": "רבים", "form": "עשו"}
-      ]
+  "root_family": {
+    "root": "ע-ש-ה",
+    "gzera": "ל\"ה",
+    "root_meaning": {
+      "he": "עשייה, יצירה, פעולה",
+      "en": "doing, making, action"
     },
-    {
-      "binyan": "קל",
-      "tense": "עתיד",
-      "inflections": [
-        {"person": "אני", "gender": null, "number": "יחיד", "form": "אעשה"},
-        {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "תעשי"},
-        {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "תעשה"},
-        {"person": "היא", "gender": "נקבה", "number": "יחיד", "form": "תעשה"},
-        {"person": "הוא", "gender": "זכר", "number": "יחיד", "form": "יעשה"},
-        {"person": "אנחנו", "gender": null, "number": "רבים", "form": "נעשה"},
-        {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "תעשינה"},
-        {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "תעשו"},
-        {"person": "הן", "gender": "נקבה", "number": "רבים", "form": "תעשינה"},
-        {"person": "הם", "gender": "זכר", "number": "רבים", "form": "יעשו"}
-      ]
-    },
-    {
-      "binyan": "קל",
-      "tense": "ציווי",
-      "inflections": [
-        {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "עשי"},
-        {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "עשה"},
-        {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "עשו"},
-        {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "עשו"}
-      ]
-    },
-    {
-      "binyan": "קל",
-      "tense": "הווה",
-      "inflections": [
-        {"form": "עושה", "aspect": "participial", "gender": "זכר", "number": "יחיד"},
-        {"form": "עושה", "aspect": "participial", "gender": "נקבה", "number": "יחיד"},
-        {"form": "עושים", "aspect": "participial", "gender": "זכר", "number": "רבים"},
-        {"form": "עושות", "aspect": "participial", "gender": "נקבה", "number": "רבים"}
-      ]
-    },
-        {
-          "binyan": "נפעל",
-          "tense": "עבר",
-          "inflections": [
-              {"person": "אני", "gender": null, "number": "יחיד", "form": "נעשיתי"},
-              {"person": "את", "gender": "נקבה", "number": "יחיד", "form": "נעשית"},
-              {"person": "אתה", "gender": "זכר", "number": "יחיד", "form": "נעשית"},
-            {"person": "היא", "gender": "נקבה", "number": "יחיד", "form": "נעשתה"},
-            {"person": "הוא", "gender": "זכר", "number": "יחיד", "form": "נעשה"},
-             {"person": "אנחנו", "gender": null, "number": "רבים", "form": "נעשינו"},
-            {"person": "אתן", "gender": "נקבה", "number": "רבים", "form": "נעשיתן"},
-             {"person": "אתם", "gender": "זכר", "number": "רבים", "form": "נעשיתם"},
-             {"person": "הן", "gender": "נקבה", "number": "רבים", "form": "נעשו"},
-             {"person": "הם", "gender": "זכר", "number": "רבים", "form": "נעשו"}
+    "verbs": [
+      {
+        "binyan": "פָּעַל",
+        "lemma": "עָשָׂה",
+        "voice": "active",
+        "meaning": {
+          "he": "לעשות, ליצור, לבצע",
+          "en": "to do, to make, to perform"
+        },
+        "relations": { "passive": "נַעֲשָׂה" },
+        "infinitive": { "niqqud": "לַעֲשׂוֹת", "plain": "לעשות" },
+        "conjugation": {
+          "past": {
+            "1s": "עָשִׂיתִי", "2ms": "עָשִׂיתָ", "2fs": "עָשִׂית", "3ms": "עָשָׂה",
+            "3fs": "עָשְׂתָה", "1p": "עָשִׂינוּ", "2mp": "עֲשִׂיתֶם", "2fp": "עֲשִׂיתֶן",
+            "3p": "עָשׂוּ"
+          },
+          "present": {
+            "ms": "עוֹשֶׂה", "fs": "עוֹשָׂה", "mp": "עוֹשִׂים", "fp": "עוֹשׂוֹת"
+          },
+          "future": {
+            "1s": "אֶעֱשֶׂה", "2ms": "תַּעֲשֶׂה", "2fs": "תַּעֲשִׂי", "3ms": "יַעֲשֶׂה",
+            "3fs": "תַּעֲשֶׂה", "1p": "נַעֲשֶׂה", "2mp": "תַּעֲשׂוּ", "2fp": "תַּעֲשֶׂינָה",
+            "3p": "יַעֲשׂוּ"
+          },
+          "imperative": {
+            "2ms": "עֲשֵׂה", "2fs": "עֲשִׂי", "2mp": "עֲשׂוּ", "2fp": "עֲשֶׂינָה"
+          }
+        },
+        "examples": [
+          { "he": "הוא **עוֹשֶׂה** את עבודתו בנאמנות.", "en": "He does his work faithfully." },
+          { "he": "היא **עָשְׂתָה** עוגה טעימה.", "en": "She made a delicious cake." },
+          { "he": "מה אני אמור **לַעֲשׂוֹת** עכשיו?", "en": "What am I supposed to do now?" }
         ]
-    }
-  ]
+      },
+      {
+        "binyan": "נִפְעַל",
+        "lemma": "נַעֲשָׂה",
+        "voice": "passive/middle",
+        "meaning": { "he": "להיעשות, להתרחש, להפוך ל-", "en": "to be done, to be made, to become" },
+        "relations": { "active": "עָשָׂה" },
+        "infinitive": { "niqqud": "לְהֵעָשׂוֹת", "plain": "להיעשות" },
+        "conjugation": {
+          "past": {
+            "1s": "נַעֲשֵׂיתִי", "2ms": "נַעֲשֵׂיתָ", "2fs": "נַעֲשֵׂית", "3ms": "נַעֲשָׂה",
+            "3fs": "נַעֲשְׂתָה", "1p": "נַעֲשֵׂינוּ", "2mp": "נַעֲשֵׂיתֶם", "2fp": "נַעֲשֵׂיתֶן",
+            "3p": "נַעֲשׂוּ"
+          },
+          "present": {
+            "ms": "נַעֲשֶׂה", "fs": "נַעֲשֵׂית", "mp": "נַעֲשִׂים", "fp": "נַעֲשׂוֹת"
+          },
+          "future": {
+            "1s": "אֵעָשֶׂה", "2ms": "תֵּעָשֶׂה", "2fs": "תֵּעָשִׂי", "3ms": "יֵעָשֶׂה",
+            "3fs": "תֵּעָשֶׂה", "1p": "נֵעָשֶׂה", "2mp": "תֵּעָשׂוּ", "2fp": "תֵּעָשֶׂינָה",
+            "3p": "יֵעָשׂוּ"
+          },
+          "imperative": {
+            "2ms": "הֵעָשֵׂה", "2fs": "הֵעָשִׂי", "2mp": "הֵעָשׂוּ", "2fp": "הֵעָשֶׂינָה"
+          }
+        },
+        "examples": [
+          { "he": "הפרויקט **נַעֲשָׂה** בשיתוף פעולה.", "en": "The project was done in collaboration." },
+          { "he": "השמלה **נַעֲשֵׂית** בעבודת יד.", "en": "The dress is made by hand." },
+          { "he": "מה **יֵעָשֶׂה** אם לא נצליח?", "en": "What will be done if we don't succeed?" }
+        ]
+      },
+      {
+        "binyan": "פִּעֵל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין שימוש נפוץ בבניין זה לשורש ע-ש-ה.", "en": "No common usage in this binyan for root Ayin-Sin-Heh." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "פֻּעַל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין שימוש נפוץ בבניין זה לשורש ע-ש-ה.", "en": "No common usage in this binyan for root Ayin-Sin-Heh." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הִפְעִיל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין שימוש נפוץ בבניין זה לשורש ע-ש-ה.", "en": "No common usage in this binyan for root Ayin-Sin-Heh." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הֻפְעַל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין שימוש נפוץ בבניין זה לשורש ע-ש-ה.", "en": "No common usage in this binyan for root Ayin-Sin-Heh." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      },
+      {
+        "binyan": "הִתְפַּעֵל",
+        "lemma": null,
+        "voice": null,
+        "meaning": { "he": "אין שימוש נפוץ בבניין זה לשורש ע-ש-ה.", "en": "No common usage in this binyan for root Ayin-Sin-Heh." },
+        "relations": {},
+        "infinitive": null,
+        "conjugation": {},
+        "examples": []
+      }
+    ]
+  }
 }
