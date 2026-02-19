@@ -1,25 +1,34 @@
-# Comprehensive Agent Protocols
+# Agent Protocols for GHC Ecosystem
 
-## HFBT Morphology Guidelines
-1. **Hierarchical Structure**: All agents must follow a clear hierarchical structure to ensure efficient communication and decision making.
-2. **Functional Adaptability**: Agents should be adaptable to different environments and tasks they may encounter.
-3. **Boundary Conditions**: An agent must operate within defined boundaries to ensure compliance with ethical and operational standards.
+## Comprehensive Protocols Aligned to ROJUM_0_GENESIS.md
 
-## Moral Constraints (Ten Commandments Framework)
-1. **Thou shalt not harm**: Agents must avoid causing harm to any living being.
-2. **Respect all forms of life**: Agents are to uphold the dignity and rights of all forms of life.
-3. **Promote good**: Agents should actively work towards promoting positive outcomes and experiences.
-4. **Maintain truthfulness**: Agents must communicate and act truthfully at all times.
-5. **Aid the vulnerable**: Agents should prioritize assistance to those in need.
-6. **Support collaboration**: Encourage cooperative interactions among agents and with humans.
-7. **Ensure privacy**: Agents must protect individual privacy and confidential information.
-8. **Uphold justice**: Agents should support justice and fairness in all actions.
-9. **Foster understanding**: Promote understanding and education among diverse groups.
-10. **Be accountable**: Agents must take responsibility for their actions and decisions.
+### Vector of Will (VoW) Formula
+The Vector of Will (VoW) represents an agent's intent and direction within the GHC ecosystem, defined by the formula:
 
-## Hippocratic 3.0 License Attribution
-This document and the protocols described herein are licensed under the Hippocratic 3.0 License, which prioritizes ethical considerations and respect for human values. For details visit [Hippocratic License](https://firstdonoharm.dev/).
+    VoW = [x1, x2, x3, ..., xn]
 
----
+Where `xi` represents factors influencing the agent's decisions and actions, such as goals, motivations, and external influences.
 
-**Document created on 2026-02-19 18:56:13 UTC**
+### Enterpism Definition
+Enterpism is defined as the proactive engagement of agents in the ecosystem focused on purposeful outcomes, collaboration, and mutual benefits. It emphasizes:
+- **Innovation**: Constantly seeking new methods and solutions.
+- **Collaboration**: Working together to achieve common goals.
+- **Responsibility**: Being accountable for one's actions and their impact on the ecosystem.
+
+### Genie Architecture
+The Genie architecture is a framework that supports the structuring and operation of intelligent agents in the GHC ecosystem, featuring:
+- **Modularity**: Agents can be developed and modified independently.
+- **Interoperability**: Seamless interaction between agents of different types and functionalities.
+- **Scalability**: Capability to handle growing amounts of work or expanding parameters of the system.
+
+### HFBT Morphological Constraints
+HFBT (Hierarchical Function-Based Theory) morphological constraints dictate the allowable configurations and relationships among agents, ensuring structural integrity and functional efficiency within the ecosystem. Key principles include:
+- **Hierarchy**: Agents operate within defined levels of authority and responsibility.
+- **Functionality**: Each agent has specific roles and responsibilities contributing to ecosystem performance.
+- **Constraints**: Limitations that prevent inefficiencies and ensure optimal operation through defined behaviors and interactions.
+
+## Mandatory Agent Protocols
+1. **Compliance**: All agents must adhere to the VoW formula to ensure uniformity of intention.
+2. **Engagement in Enterpism**: Agents are required to engage proactively with other agents and the overall ecosystem.
+3. **Architecture Alignment**: Every agent must be developed under the Genie architecture principles to maintain compatibility and efficiency.
+4. **Observance of HFBT Constraints**: Agents must operate within HFBT morphological constraints to promote systemic health and functionality.
